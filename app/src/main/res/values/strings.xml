@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BasicTransition</string>
+    <string name="scene">Scene</string>
+</resources>
