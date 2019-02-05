@@ -12,10 +12,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val scene1 = Scene(scene_root, scene_root.findViewById(R.id.container) as ViewGroup)
-
+        val scene1 = Scene.getSceneForLayout(scene_root, R.layout.scene1, this)
         val scene2 = Scene.getSceneForLayout(scene_root, R.layout.scene2, this)
-
         val scene3 = Scene.getSceneForLayout(scene_root, R.layout.scene3, this)
 
         scene1Button.setOnClickListener {
